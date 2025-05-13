@@ -9,19 +9,9 @@ Original file is located at
 #Imports
 """
 
-!pip install dash
-!pip install dash-bootstrap-components
-!pip install pandas
-!pip install plotly
-!pip install openpyxl
-!pip install dash-html-components
-!pip install dash-core-components
-
 import pandas as pd
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, Dash, dcc, html
 import plotly.express as px
 import dash_bootstrap_components as dbc
 
@@ -246,6 +236,5 @@ def atualizar_graficos(tipo, marca, produtos, lojas, clientes):
 
     return fig1, fig2, fig3, fig4, fig5, fig6
 
-# Executar app (para ambientes como Jupyter/Colab use app.run_server(mode='inline'))
-if __name__ == '__main__':
-    app.run(debug=True)
+app = dash.Dash(__name__)
+server = app.server
