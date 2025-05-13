@@ -11,7 +11,7 @@ Original file is located at
 
 import pandas as pd
 import plotly.express as px
-from dash import Input, Output, dcc, html, Dash
+from dash import Input, Output, dcc, dbc, html, Dash
 
 """#Dados"""
 
