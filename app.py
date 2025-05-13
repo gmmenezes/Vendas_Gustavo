@@ -127,7 +127,7 @@ filtros = {
 }
 
 # Iniciar app
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 # Layout
 app.layout = dbc.Container([
