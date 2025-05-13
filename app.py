@@ -16,14 +16,14 @@ from dash import Input, Output, dcc, html, Dash
 """#Dados"""
 
 #Carregar Planilhas
-Base_vendas2020 = pd.read_excel('/content/Base Vendas - 2020.xlsx')
-Base_vendas2021 = pd.read_excel('/content/Base Vendas - 2021.xlsx')
-Base_vendas2022 = pd.read_excel('/content/Base Vendas - 2022.xlsx')
+Base_vendas2020 = pd.read_excel('Base Vendas - 2020.xlsx')
+Base_vendas2021 = pd.read_excel('Base Vendas - 2021.xlsx')
+Base_vendas2022 = pd.read_excel('Base Vendas - 2022.xlsx')
 df_Base_vendas = pd.concat([Base_vendas2020, Base_vendas2021, Base_vendas2022])
 
-cad_clientes = pd.read_excel('/content/Cadastro Clientes.xlsx')
-cad_lojas = pd.read_excel('/content/Cadastro Lojas.xlsx')
-cad_produtos = pd.read_excel('/content/Cadastro Produtos.xlsx')
+cad_clientes = pd.read_excel('Cadastro Clientes.xlsx')
+cad_lojas = pd.read_excel('Cadastro Lojas.xlsx')
+cad_produtos = pd.read_excel('Cadastro Produtos.xlsx')
 
 """#Copias DF"""
 
@@ -50,7 +50,7 @@ print(Vendas.columns.tolist())
 
 """
 
-df_clientes = pd.read_excel('/content/Cadastro Clientes.xlsx', skiprows=2)
+df_clientes = pd.read_excel('Cadastro Clientes.xlsx', skiprows=2)
 Clientes=df_clientes.copy()
 
 print(Clientes.columns.tolist())
