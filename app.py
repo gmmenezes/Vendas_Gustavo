@@ -10,10 +10,8 @@ Original file is located at
 """
 
 import pandas as pd
-import dash
-from dash.dependencies import Input, Output, Dash, dcc, html
 import plotly.express as px
-import dash_bootstrap_components as dbc
+from dash import Input, Output, dcc, html, Dash
 
 """#Dados"""
 
@@ -236,5 +234,4 @@ def atualizar_graficos(tipo, marca, produtos, lojas, clientes):
 
     return fig1, fig2, fig3, fig4, fig5, fig6
 
-app = dash.Dash(__name__)
 server = app.server
